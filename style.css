@@ -9,6 +9,10 @@
 
   --border-radius-medium: 10px;
   --border-radius-large: 20px;
+  --shadow-color: 213deg 19% 59%;
+  --shadow-elevation-medium: 0.3px 0.8px 1.2px hsl(var(--shadow-color) / 0.05),
+    1.9px 4.9px 7.6px -0.2px hsl(var(--shadow-color) / 0.25),
+    5.7px 14.5px 22.6px -0.4px hsl(var(--shadow-color) / 0.45);
 }
 
 * {
@@ -30,6 +34,7 @@ body {
   padding: 16px;
   background: var(--color-white);
   border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-elevation-medium);
 }
 
 h1,
